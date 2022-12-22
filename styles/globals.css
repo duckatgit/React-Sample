@@ -1,0 +1,103 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.sectionBtn .mantine-Button-inner {
+  justify-content: start !important;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.menu-bar-button {
+  transition: background-color 0.3s;
+}
+.menu-bar-icon{
+  transition: stroke 0.3s;
+}
+.menu-bar-button:hover .menu-bar-icon{
+  stroke: #228BE6;
+}
+
+/* Overriding the default toolbar styling */
+.gjs-toolbar {
+  background-color: white !important;
+  border-radius: 5px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+.gjs-toolbar-item {
+  color: #5C5F66;
+  margin: 4px;
+  transition: background-color 0.3s;
+}
+
+.gjs-toolbar-item:hover {
+  color: #228BE6;
+  background-color: #E7F5FF;
+  border-radius: 5px;
+}
+.myMenu.active{
+  position: relative;
+}
+.myMenu.active::after{
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: #4C6EF5;
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+}
+.templates.active{
+  position: relative;
+}
+.templates.active::after{
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: #FAB005;
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
